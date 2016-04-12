@@ -1,0 +1,57 @@
+ <script type = "text/javascript">
+    /*
+    * Function Check_Logon(): check must be input before submit
+    */
+    function check_logon(userid, password) {
+
+        if (userid == "") {
+            //alert("Please Entry Your User Name");
+            alert("請輸入使用者名稱");
+            document.all.user_name.focus(1);
+            return false;
+        }
+
+        // check password entry
+        if (password == "") {
+            //alert("Please Entry Your Password");
+            alert("請輸入您的密碼");
+            document.all.password.focus();
+            return false;
+        }
+        return true;
+    }
+    /*
+    * Check the current docuent 
+    */
+<form name = "frm_logon" method = "post" >
+          
+              <table >
+                 
+                    <tr> 
+                        <td> <label for = "label4">学号</label> </td>
+                        <td width = "5" align = "right">&nbsp;</td>
+                        <td> <input style="width:150px;" name = "user_name" type = "text" id = "userid" maxlength = "16" /> </td>
+                    </tr>
+
+                    <tr> 
+                        <td> <label for = "userpwd">密码</label> </td>
+                        <td width = "5" align = "right">&nbsp;</td>
+                        <td> <input style="width:150px;" name = "password" type = "password" id = "password" maxlength = "16" value=""/> </td>
+                    </tr>
+
+                    <tr> 
+                        <td>&nbsp;</td>
+                        <td> <input type = "submit"  id="loginbutton" value = "登入"
+                                           name = "logon"  style = "padding-top:2px;" > </td>
+                            <td width = "5" align = "right">&nbsp;</td>
+                    </tr>
+
+                    <tr> 
+                        <td> <input type = "radio" name="radiogroup" checked="checked">学生</input> 
+                            <input type = "radio" name="radiogroup">教师</input> 
+                            <input type = "radio" name="radiogroup">宿管</input> 
+                            <input type = "radio" name="radiogroup">系统管理员</input> 
+                        </td>
+                    </tr>
+                </table>
+      </form> 

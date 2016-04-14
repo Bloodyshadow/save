@@ -1,8 +1,71 @@
- <script type = "text/javascript">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>焰荫~宿舍管理系统~</title>
+    <link rel='stylesheet'  type="text/css" href='css/bootstrap.min.css'>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="active"><a href="#">Home</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+
+            <form name = "form_logon" method = "post" >
+          
+              <table >
+                 
+                    <tr> 
+                        <td> <label for = "label4">学号</label> </td>
+                        <td width = "5" align = "right">&nbsp;</td>
+                        <td> <input style="width:150px;" name = "user_name" type = "text" id = "userid" maxlength = "16" /> </td>
+                    </tr>
+
+                    <tr> 
+                        <td> <label for = "userpwd">密码</label> </td>
+                        <td width = "5" align = "right">&nbsp;</td>
+                        <td> <input style="width:150px;" name = "password" type = "password" id = "password" maxlength = "16" value=""/> </td>
+                    </tr>
+
+                    <tr> 
+                        <td>&nbsp;</td>
+                        <td> <input type = "submit"  id="loginbutton" value = "登入 "
+                                           name = "logon"  style = "padding-top:2px;" onclick= "check_logon();"> </td>
+                            <td width = "5" align = "right">&nbsp;</td>
+                    </tr>
+
+                    <tr> 
+                        <td> <input type = "radio" name="radiogroup" checked="checked">学生
+                            <input type = "radio" name="radiogroup">教师 
+                            <input type = "radio" name="radiogroup">宿管 
+                            <input type = "radio" name="radiogroup">系统管理员
+                        </td>
+                    </tr>
+                </table>
+      </form> 
+
+    <img src="1.png">1<img>
+    <button onclick="check_logon()">my button</button>
+    <hr />
+      <footer>
+        <p>By FlameShadowV 2016</p>
+        <script type = "text/javascript">
     /*
-    * Function Check_Logon(): check must be input before submit
+    *   Function Check_Logon(): check must be input before submit
     */
-    function check_logon(userid, password) {
+    function check_logon(userid,passsword) {
 
         if (userid == "") {
             //alert("Please Entry Your User Name");
@@ -23,35 +86,9 @@
     /*
     * Check the current docuent 
     */
-<form name = "frm_logon" method = "post" >
-          
-              <table >
-                 
-                    <tr> 
-                        <td> <label for = "label4">学号</label> </td>
-                        <td width = "5" align = "right">&nbsp;</td>
-                        <td> <input style="width:150px;" name = "user_name" type = "text" id = "userid" maxlength = "16" /> </td>
-                    </tr>
+    </script>
+  </body>
+  
 
-                    <tr> 
-                        <td> <label for = "userpwd">密码</label> </td>
-                        <td width = "5" align = "right">&nbsp;</td>
-                        <td> <input style="width:150px;" name = "password" type = "password" id = "password" maxlength = "16" value=""/> </td>
-                    </tr>
+</html>
 
-                    <tr> 
-                        <td>&nbsp;</td>
-                        <td> <input type = "submit"  id="loginbutton" value = "登入"
-                                           name = "logon"  style = "padding-top:2px;" > </td>
-                            <td width = "5" align = "right">&nbsp;</td>
-                    </tr>
-
-                    <tr> 
-                        <td> <input type = "radio" name="radiogroup" checked="checked">学生</input> 
-                            <input type = "radio" name="radiogroup">教师</input> 
-                            <input type = "radio" name="radiogroup">宿管</input> 
-                            <input type = "radio" name="radiogroup">系统管理员</input> 
-                        </td>
-                    </tr>
-                </table>
-      </form> 

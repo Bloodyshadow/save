@@ -12,6 +12,7 @@
       }
     </style>
     <link   type="text/css"  href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link   type="text/css"  href='css/mycss.css' rel='stylesheet'>
   </head>
   <body>
 

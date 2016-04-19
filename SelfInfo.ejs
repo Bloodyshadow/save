@@ -17,6 +17,21 @@
         <td>1</td>
       </tr>
 
+
+<tbody>
+<% for(var i=0; i<result.length;i++){%>
+<tr>
+    <th><%= i+1 %></th>
+    <td><%= result[i].username %></td>
+    <td><%= result[i].password %></td>
+    <td><%= result[i].lastName + result[i].firstName %></td>
+    <td><%= result[i].company %></td>
+    <td><%= result[i].telephone %></td>
+    <td><%= result[i].email %></td>
+    <td><%= result[i].authority %></td>
+</tr>
+<%}%>
+</tbody>
       <tr>
         <td>1</td>
         <td>1</td>

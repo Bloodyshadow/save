@@ -47,10 +47,11 @@ s<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">~寢室檢查<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">查寢管理</li>
-                <li><a href="/AttendanceInfo">查看出勤情況</a></li>
+                <li><a href="/AttendanceInfo">出勤情況(补签)</a></li>
                 <li><a href="/AttendanceRegister">登記出勤情況</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">卫生检查/li>
+                <li><a href="/HygienismInfo">卫生情况(修改)</a></li>
                 <li><a href="/HygienismRegister">登記检查結果</a></li>
               </ul>
             </li>
@@ -58,6 +59,15 @@ s<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
+
+    <table>
+      <tr>
+        <td><button class="choice">111</button></td>
+        <td><button class="choice">222</button></td>
+      </tr>
+    </table>
+
+
 
     <img src="1.png">1<img>
     <hr />

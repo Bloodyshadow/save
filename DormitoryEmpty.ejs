@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <head>
+    <title>焰荫~宿舍管理系统~</title>
+    <link rel='stylesheet'  type="text/css" href='css/bootstrap.min.css'>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link   type="text/css"  href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel='stylesheet'  type="text/css" href='css/mycss.css'>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="active"><a href="#">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">~信息管理<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">個人信息管理</li>
+                <li><a href="/SelfInfo">查看個人信息</a></li>
+                <li><a href="/PwdChange">個人密碼修改</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">學生信息管理</li>
+                <li><a href="/PwdManage">學生密碼修改</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">~宿舍管理<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/DormitoryPoint">分配宿舍</a></li>
+                <li><a href="/DormitoryInfo">查看宿舍人員</a></li>
+                <li><a href="/DormitoryEmpty">清空宿舍</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">~寢室檢查<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">查寢管理</li>
+                <li><a href="/AttendanceInfo">查看出勤情況</a></li>
+                <li><a href="/AttendanceRegister">登記出勤情況</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">衛生檢查</li>
+                <li><a href="/HygienismRegister">登記檢查結果</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+
+    <table>
+      <tr>
+        <td><button class="choice">111</button></td>
+        <td><button class="choice">222</button></td>
+      </tr>
+    </table>
+
+    <table id="confirm">
+      <tr>
+        <td><label>请输入您要清空的年级:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" value=""></input></td>
+      </tr>
+    </table>
+
+    <table id="confirm">
+      <tr>
+        <td><label>请输入您要撤出的学号:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" value=""></input></td>
+      </tr>
+    </table>
+
+
+    <hr />
+      <footer>
+        <p>By FlameShadowV 2016</p>
+      </footer>
+    </div>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>

@@ -1,2 +1,93 @@
-http://www.kuqin.com/shuoit/20150312/345169.html
-http://cache.baiducontent.com/c?m=9d78d513d99c0aee1bb3837e7c5780205f0fdc367dc0d0642389c51f84652b190672a4fb792d4a4295876b6672b2540cb4ad6365377461ecc79b9f4aaaeacf77388850652c01c75c428d44fadc4151c476965cbdfe1ee7b8f33093eb8397804353bd094325de&p=882a9645dcdf18b913be9b7c5757a5&newp=9c65cb04c7904ead08e2977e070886231610db2151dd&user=baidu&fm=sc&query=mysql+settings+nodejs&qid=ed49425700000e2c&p1=3
+
+create database myssmsdb;
+use myssmsdb;
+
+sno=student no;tno=teacher no;dmno=dormitory manager no;ano=admin no;dno=dormitory no;
+rno=room no;tt=teacher title;fno=faculty no;ctno=charging teacherno;pwd=password;
+fano=facility no;
+
+create table student_info(sno int not null unique primary key,
+name varchar(20) not null,
+sex varchar(4),
+sstatus int,
+dstatus int,
+cname varchar(32)
+);
+
+create table student_info_extra(sno int not null unique primary key,
+birthday int,
+nation varchar(32),
+cno int,
+
+);
+
+create table teacher_info(tno int not null unique primary key,
+name varchar(20) not null,
+sex varchar(4),
+fno int,
+tt varchar(20),
+stt varchar(20)
+
+
+);
+
+create table dormitorymanager_info(dmno int not null unique primary key,
+name varchar(20) not null,
+sex varchar(4),
+dno int not null
+);
+
+create table account(no int not null unique primary key,
+password vachar(20) not null
+
+);
+
+create table dormitory_info(dno int not null unique primary key,
+rno int not null,
+bno int not null,
+sno int
+
+);
+
+
+create table hygienism_checkup(dno int,
+rno int,
+point int,
+time date,
+comment varchar(100)
+)
+
+create table facility_service(dno int,
+rno int,
+status int,
+sort int,
+fano int,
+comment varchar(100)
+)
+
+create table leave_record(sno int not null primary key,
+time date,
+comment varchar(100),
+status int,
+ctno int,
+ctcomment varchar(60),
+resultcomment varchar(60)
+)
+
+create table attendance_check(dno int,
+rno int,
+bno int,
+sno int,
+time date,
+status int
+)
+
+create table message_system(sno int,
+type int,
+status int)
+
+create table rate(dno int,
+rno int,
+date int,
+powerrate double
+)
